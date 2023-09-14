@@ -15,7 +15,7 @@ const Searched = () => {
 
     const getMovies = async () =>{
       setLoading(true)
-    await axios.get('https://api.themoviedb.org/3/discover/movie?api_key=04cb035953f17efb0b2719fc8ac25ddf').then(res => {
+    await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${import.meta.env.VITE_API_KEY}`).then(res => {
     setLoading(false)    
     setSearchedMovies(res.data.results.slice(0, 10));
         console.log(res.data);

@@ -22,7 +22,7 @@ function Movies() {
 
     const movieDetails = async () =>{
       
-    await axios.get(`https://api.themoviedb.org/3/movie/${params.id}?api_key=04cb035953f17efb0b2719fc8ac25ddf`).then(res => {
+    await axios.get(`https://api.themoviedb.org/3/movie/${params.id}?api_key=${import.meta.env.VITE_API_KEY}`).then(res => {
         setDetails(res.data);
         console.log(res.data);
     }).catch(err => {
