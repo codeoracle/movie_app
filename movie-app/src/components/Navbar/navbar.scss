@@ -1,0 +1,117 @@
+$small: 900px;
+$medium: 1200px;
+
+// navbar
+
+.navbar{
+    margin-top: 1%;
+    margin-right: 7%;
+    margin-left: 7%;
+
+    //  mobile media query
+
+    @media screen and (max-width: $small) {
+            position: relative;
+            height: 20%;
+        }
+    .navWrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        
+
+        .link{
+            text-decoration: none;
+        }
+
+                //  mobile media query
+        .logo{
+            @media screen and (max-width: $small) {
+                    width: 80%;
+                }
+        }
+        .searchWrap{
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: transparent;
+            width: 30%;
+
+            //  mobile media query
+
+            @media screen and (max-width: $small) {
+                position: absolute;
+                bottom: 0;
+                left: 9%;
+                width: 80%;
+                }
+
+            .inputWrap{
+                position: relative;
+                width: 100%;
+                display: flex;
+                align-items: center;
+
+                .searchInput{
+                    border: none;
+                    outline: none;
+                    background: none;
+                    border: 2px solid #fff;
+                    padding: 1rem 3rem;
+                    font-size: 20;
+                    border-radius: 10px;
+                    color: #fff;
+                width: 100%;
+
+                    
+                    &::placeholder{
+                        color: #fff;
+                    }
+                }
+
+                .searchIcon{
+                    position: absolute;
+                    top: 30%;
+                    right: 0%;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+      .menuWrap{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+            //  mobile media query
+
+        @media screen and (max-width: $small) {
+                gap: 10px;
+            }
+
+            .signIn{
+                font-size: 18px;
+                font-weight: 400;
+                cursor: pointer;
+            }
+
+            .signinIcon{
+                background: #BE123C;
+                border-radius: 50%;
+                padding: 5px;
+                font-size: 30px;
+                cursor: pointer;
+
+                //  mobile media query
+                
+        @media screen and (max-width: $small) {
+                padding: 4px;
+                font-size: 25px;
+            }
+            }
+        }
+    }
+}

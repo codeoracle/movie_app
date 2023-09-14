@@ -1,0 +1,115 @@
+$small: 900px;
+$medium: 1200px;
+
+.featured{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-right: 7%;
+    margin-left: 7%;
+
+.featuredWrap{
+    display: flex;
+    flex-direction: column;
+
+.featuredtitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3%;
+
+.title{
+    font-size: 36px;
+    font-weight: 500;
+
+    //  mobile media query
+
+    @media screen and (max-width: $small) {
+    font-size: 20px;
+
+        }
+}
+.seeMore{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: #B91C1C;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+
+    //  mobile media query
+
+@media screen and (max-width: $small) {
+        font-size: 16px;
+
+    }
+}
+}
+
+.movieList{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+.movieCard{
+    overflow: hidden;
+    max-width: 20rem;
+    
+    .link{
+    text-decoration: none;
+    display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10%;
+
+    .cardImgWrap{
+        position: relative;
+        overflow: hidden;
+        
+        .img{
+            width: 100%;
+        }
+        .icon{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #e9e6e6;
+            background: #bbbabab3;
+            padding: 7px;
+            border-radius: 50%;
+            font-size: 20px;
+        }
+    }
+    .year{
+        font-size: 12px;
+        color: #4B5563;
+        font-weight: 400;
+    }
+    .title{
+        font-size: 18px;
+        font-weight: 500;
+        color: #111827;
+    }
+    .rating{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .rate{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #111827;
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+    .genre{
+        font-size: 12px;
+        color: #4B5563;
+        font-weight: 400;
+    }
+}
+}
+}
+}
+}
