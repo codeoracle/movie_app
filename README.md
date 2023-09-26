@@ -10,7 +10,7 @@ These instructions will help you get a copy of the project up and running on you
 1. Clone the repository to your local machine using Git:
 
    ```shell
-   git clone https://github.com/codeoracle/movie_app_HNG_Task2
+   git clone https://github.com/codeoracle/movie_app_2
 
 cd movie-app
 
