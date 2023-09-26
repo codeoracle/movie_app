@@ -14,7 +14,7 @@ const Featured = () => {
 
     const getMovie = async () =>{
       
-    await axios.get(`https://api.themoviedb.org/3/movie/top_rated?api_key=${import.meta.env.VITE_API_KEY}`).then(res => {
+    await axios.get(`https://api.themoviedb.org/3/movie/top_rated?api_key=${import.meta.env.API_KEY}`).then(res => {
         setMovies(res.data.results.slice(0, 10));
         console.log(res.data.results);
     }).catch(err => {
